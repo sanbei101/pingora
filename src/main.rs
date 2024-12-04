@@ -74,8 +74,8 @@ fn main() {
     my_server.bootstrap();
 
     SimpleProxy::new(
-        8081,                                    // listen
-        vec!["116.205.113.211:3001".to_owned()], // upstreams
+        7033,                                    // listen
+        vec!["http://116.205.113.211:3001".to_owned()], // upstreams
         "hentioe.dev".to_owned(),                // target_host
         true,                                    // tls
     )
